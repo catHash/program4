@@ -18,6 +18,10 @@ public class program4Main
                 num1 = keyboard.nextDouble();
                 System.out.println("Enter another integer.");
                 num2 = keyboard.nextDouble();
+                if (num1 < 0 || num2 < 0){
+                  System.out.println("Do not enter a number below zero.");
+                  choice = -1;
+                }
                 switch (choice)
                 {
                     case 1:
@@ -103,7 +107,7 @@ public class program4Main
         double num1 = n1;
         double num2 = n2;
         answer = num1 + num2;
-        System.out.println(num1 + " + " + num2 + " = " + answer);
+        System.out.printf("%.2f + %.2f = %.2f \n", num1,num2,answer);
     }// end of findSum
     public static void findDifference(double n1, double n2)
     {
