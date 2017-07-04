@@ -12,42 +12,41 @@ public class program4Main
 
         while (choice != 5)
         {
-            System.out.println("Enter an integer.");
-            num1 = keyboard.nextDouble();
-            System.out.println("Enter another integer.");
-            num2 = keyboard.nextDouble();
-            choice = keyboard.nextInt();
-
             if (choice >=1 && choice <=5)
             {
+                System.out.println("Enter an integer.");
+                num1 = keyboard.nextDouble();
+                System.out.println("Enter another integer.");
+                num2 = keyboard.nextDouble();
                 switch (choice)
                 {
-                case 1:
-                {
-                    findLargest(num1, num2);
-                    break;
-                }
-                case 2:
-                {
-                    findSmallest(num1, num2);
-                    break;
-                }
-                case 3:
-                {
-                    findSum(num1,num2);
-                    break;
-                }
-                case 4:
-                {
-                    findDifference(num1, num2);
-                    break;
-                }
+                    case 1:
+                    {
+                        findLargest(num1, num2);
+                        break;
+                    }
+                    case 2:
+                    {
+                        findSmallest(num1, num2);
+                        break;
+                    }
+                    case 3:
+                    {
+                        findSum(num1,num2);
+                        break;
+                    }
+                    case 4:
+                    {
+                        findDifference(num1, num2);
+                        break;
+                    }
+                    case 5:
+                        break;
                 }//end of switch
             }//end of if
             else
             {
                 System.out.println("Please enter a value between 1-5.");
-                choice = keyboard.nextInt();
             }
             choice = displayMenu();
         }//end of while
@@ -70,7 +69,7 @@ public class program4Main
         double num2 = n2;
         if (num1 > num2)
         {
-             System.out.println(n1 + " > " + n2);
+            System.out.println(n1 + " > " + n2);
         }
         else if (num2 > num1)
         {
